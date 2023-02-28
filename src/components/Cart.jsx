@@ -51,10 +51,10 @@ function Cart() {
         </main>
         
         <aside>
-            <h2>Subtotal: ${subTotal}</h2>
-            <h2>Shipping: ${shipping}</h2>
-            <h2>Tax: ${tax}</h2>
-            <h2>Total: ${total}</h2>
+            <h2>Subtotal: &#8377;{subTotal}</h2>
+            <h2>Shipping: &#8377;{shipping}</h2>
+            <h2>Tax: &#8377;{tax}</h2>
+            <h2>Total: &#8377;{total}</h2>
         </aside>
     </div>
   )
@@ -65,7 +65,7 @@ const CartItem = ({imgSrc,name,price,qty,decrement,increment,deleteHandler,id}) 
         <img src = {imgSrc} alt="Item"/>
         <article>
             <h3>{name}</h3>
-            <p>${price}</p>
+            <p>&#8377;{price}</p>
         </article>
         <div>
             <button onClick={()=>decrement(id)}>-</button>

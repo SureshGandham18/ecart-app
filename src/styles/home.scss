@@ -5,6 +5,9 @@
     padding: 3rem;
     justify-content:center;
     flex-wrap:wrap;
+    >h3{
+        color: white;
+    }
 }
 .productCard{
     background-color: $tertiary;
@@ -45,14 +48,19 @@
     }
 }
 .input{
+    display: flex;
     input{
-    border: 2px solid white ;
+    border: none ;
     margin-left: 43%;
     margin-top: 20px;
     width:200px;
     height: 45px;
-    font-style: oblique;
     font-weight: 500;
     font-size: medium;
+    border-radius: 4px;
+    }
+    >t{
+        color: white;
+        margin-top: 17px;
     }
 }

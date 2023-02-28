@@ -1,0 +1,8 @@
+@import 'colors';
+cat{
+    position: static; 
+    background-color: $tertiary;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+}
