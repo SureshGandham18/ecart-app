@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import toast from 'react-hot-toast'
 import { useDispatch } from 'react-redux';
-import {MdOutlineFindInPage} from 'react-icons/md';
+import {BsSearch} from 'react-icons/bs';
 
 const img1 = "https://rukminim1.flixcart.com/image/832/832/xif0q/computer/b/e/h/-original-imagjyc69gh3a8wu.jpeg?q=70";
 const img2 = "https://rukminim1.flixcart.com/image/832/832/kp5sya80/screen-guard/tempered-glass/o/v/n/apple-macbook-air-m1-13-3-inch-lightwings-original-imag3gh5xftgbpg3.jpeg?q=70";
@@ -82,12 +82,13 @@ function Laptops() {
   return (
     <>
     <div className='input'>
+      <div><BsSearch size={20}/></div>
+      <div>
       <input
           placeholder="Find your product...."
           sx={{ width: '250px', margin: '10px auto' }}
           onChange={(e) => setsearchName(e.target.value)}
-        />
-      <t><MdOutlineFindInPage size={50}/></t>
+        /></div>
     </div>
     <div className='home'>
         {

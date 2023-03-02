@@ -1,15 +1,15 @@
 import React,{useState} from 'react';
 import toast from 'react-hot-toast'
 import { useDispatch } from 'react-redux';
-import {MdOutlineFindInPage} from 'react-icons/md';
+import {BsSearch} from 'react-icons/bs';
 
 const img1 = "https://rukminim1.flixcart.com/image/300/300/l2p23rk0/mobile/x/b/y/-original-imagdznhnzmzfbwx.jpeg?q=90";
 const img2 = "https://rukminim1.flixcart.com/image/832/832/xif0q/mobile/v/j/h/-original-imagkp8fvenrrkth.jpeg?q=70";
 const img3 = 'https://rukminim1.flixcart.com/image/832/832/xif0q/mobile/a/x/j/-original-imagmkjfhzjhfhhe.jpeg?q=70';
 const img4 = 'https://rukminim1.flixcart.com/image/832/832/xif0q/mobile/x/r/n/-original-imagmgy5jk8ytxnw.jpeg?q=70';
 const img5 = 'https://rukminim1.flixcart.com/image/832/832/xif0q/mobile/s/y/0/-original-imaggbrbxkqr3v3u.jpeg?q=70';
-const img6 = 'https://rukminim1.flixcart.com/image/832/832/xif0q/computer/k/b/8/15s-fr4000tu-thin-and-light-laptop-hp-original-imaghrcwmt7v5svk.jpeg?q=70';
-const img7 = 'https://rukminim1.flixcart.com/image/832/832/l4vnbm80/computer/i/f/f/15ada7-thin-and-light-laptop-lenovo-original-imagfzzxmhfgzysy.jpeg?q=70';
+const img6 = 'https://rukminim1.flixcart.com/image/832/832/ky7lci80/mobile/e/j/x/-original-imagag2gatsxzcuv.jpeg?q=70';
+const img7 = 'https://rukminim1.flixcart.com/image/832/832/l5h2xe80/mobile/5/x/r/-original-imagg4xza5rehdqv.jpeg?q=70';
 const img8 = 'https://rukminim1.flixcart.com/image/832/832/l3vxbbk0/computer/g/u/y/-original-imagewgtfgzf8fdd.jpeg?q=70';
 
 function Mobiles() {
@@ -45,16 +45,16 @@ function Mobiles() {
         id: "hwve1vxujlwexuiew"
     },
     {
-        name:"POCO X5 Pro 5G",
-        price: 27990,
-        imgSrc: img3,
-        id: "hwvevxujlwexuilew"
+        name:"Xiaomi 11i 5G",
+        price: 26990,
+        imgSrc: img6,
+        id: "hw8vevxujlwexuilew"
     },
     {
-        name:"POCO X5 Pro 5G",
-        price: 27990,
-        imgSrc: img3,
-        id: "hwvevxul8jlwexuiew"
+        name:"Nothing Phone (1)",
+        price: 30000,
+        imgSrc: img7,
+        id: "hwve0vxul8jlwexuiew"
     },
     {
         name:"POCO X5 Pro 5G",
@@ -82,13 +82,15 @@ function Mobiles() {
   return (
     <>
     <div className='input'>
+      <div><BsSearch size={20}/></div>
+      <div>
       <input
           placeholder="Find your product...."
           sx={{ width: '250px', margin: '10px auto' }}
           onChange={(e) => setsearchName(e.target.value)}
-        />
-      <t><MdOutlineFindInPage size={50}/></t>
+        /></div>
     </div>
+
     <div className='home'>
         {
             filtername?.length>0?(

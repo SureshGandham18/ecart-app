@@ -1,8 +1,9 @@
 import React,{useState} from 'react';
 import toast from 'react-hot-toast'
 import { useDispatch } from 'react-redux';
-import {MdOutlineFindInPage} from 'react-icons/md';
+import {BsSearch} from 'react-icons/bs';
 import ImageSlider from './ImageSlider';
+
 const img1 = "https://www.reliancedigital.in/medias/Apple-MGN63HNA-Laptops-491946461-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxNzczNDJ8aW1hZ2UvanBlZ3xpbWFnZXMvaDVhL2gyZC85NDQzMDgzNTgzNTE4LmpwZ3xhYzRiNWIxZGQ2NjNiNWIyYjI0Y2ZkYTZlZWQ3MTFjZTMxYzVmNDBiNmM5Mzk5OTM2OGVkZmExMjMyYjIxNDQ4";
 const img2 = "https://cdn.shopify.com/s/files/1/2428/5565/products/Neemans-HaleBlack-ReLive-Knits-Jogger-FrontRightLogo-Comfortable-Shoes_1024x.jpg?v=1662876260";
 const img3 = "https://m.media-amazon.com/images/I/71KCwNV6MuL._SL1500_.jpg";
@@ -110,12 +111,12 @@ function Home() {
     <>
     
     <div className='input'>
-      <input
+      <div><BsSearch size={20}/></div>
+      <div><input
           placeholder="Find your product...."
           sx={{ width: '250px', margin: '10px auto' }}
           onChange={(e) => setsearchName(e.target.value)}
-        />
-      <t><MdOutlineFindInPage size={50}/></t>
+        /></div>
     </div>
     <ImageSlider/>
     <div className='home'>
